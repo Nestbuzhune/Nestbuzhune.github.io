@@ -14,7 +14,7 @@
 	  <label for="password">Password:</label>
 	  <input type="password" id="password" name="password">
 	  <br><br>
-	  <a href="file:///C:/cynthia/Nestbuzhune.github.io/cvformat.html"><button type="button" onclick="login()">Login</button></a>
+	  <button type="button" onclick="login()">Login</button>
 	
 	</form>
 	<script type="text/javascript">
@@ -26,6 +26,7 @@
   				return false;
   			}
   			alert("Logged in successfully!");
+  			window.location.href = 'cvformat.html';
   		}
 	</script>
 
