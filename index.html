@@ -1,60 +1,100 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>contact us</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-  <link rel="stylesheet" type="text/css" href="index.css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Personal website</title>
+  <link rel="stylesheet" type="text/css" href="cvformat.css">
 </head>
-<body>
-  <h1>Contact Us</h1>
-  <div id="map"> <u> Access Your Location on the Map Below </u></div>
-  <form>
-    <h2>contact form</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address" required>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required> <br><br>
-    <label for="comments">Comments:</label>
-    <textarea id="comments" rows="0" required></textarea><br><br>
-    <button type="button" onclick="submitForm()">Submit</button>
-  </form>
+<body style="background-color: papayawhip;">
+	<h1>  CULLICULAM VITAE</h1>
+   <span >
+        <li class="nest"><a href="#personal">Personal Information</a></li>
+        <li class="nest"><a href="#education">Educational Background</a></li>
+        <li class="nest"><a href="#experience">Working Experience</a></li>
+        <li class="nest"><a href="#skills">Skills</a></li>
+        <li class="nest"><a href="#courses">Professional Courses</a></li>
+        <li class="nest"><a href="#projects">Projects</a></li>
+        <li class="nest"><a href="#management">Management Experience</a></li>
+        <li class="nest"><a href="#dependents">Dependents</a></li>
+    </span>
+    <div>
+    <h2 id="personal"></a>Personal Information</h2>
+      <ul>
+        <li>>Name: Ernest Paschal</li>
+        <li>>Email: nestbuzhune@gmail.com</li>
+        <li>>Phone: +255753295302</li>
+        <li>>Address: Tunguu, Zanzibar</li>
+        <li>>Date of Birth: 23/9/1785</li>
+      </ul>
+     </div>
 
-  <script>
-    function submitForm() {
+     <span>
+     <h2 id="education"></a>Education Background</h2>
+      <ul>
+        <li>>Bachelor of information technology application and management, State University of Zanzibar, 2021-2014</li>
 
-      var name = document.getElementById('name').value;
-      var address = document.getElementById('address').value;
-      var email = document.getElementById('email').value;
-      var comments = document.getElementById('comments').value;
+        <li>>Master of Science in Software Engineering,State University of Zanzibar, 2025-2027</li>
+      </ul>
+     </span>
 
-      localStorage.setItem('name', name);
-      localStorage.setItem('address', address);
-      localStorage.setItem('email', email);
-      localStorage.setItem('comments', comments);
+     <section>
+      <h2 id="experiance">Working Experience</h2>
+      <ul>
+        <li>>IT staff at Temeke municipal council
+      	<li>>Design and develop web applications using html, css and javascript at SUZA</li>
+        <li>>Collaborate with other members to define requirements and implementation on system analysis and design at SUZA</li>
+        <li>>Assisted in developing and testing software applications using Python and Django</li>
+        <li>>Learned Agile development methodologies and best practices</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2 id="skills">Skills</h2>
+      <ul>
+        <li>>Web development</li>
+        <li>>System design</li>
+        <li>>JavaScript</li>
+        <li>>Java</li>
+        <li>>CSS</li>
+        <li>>HTML</li>
+        <li>>Python</li>
+      </ul>
+    </section>
+    
+    <div>
+      <h2 id="courses"></a>Professional Courses</h2>
+      <ul>
+        <li>>Oracle Certified Java Developer (2023)</li>
+        <li>>Microsoft Sql server Database (2023)</li>
+        <li>>Web Application and Development (2023)</li>
+        <li>>Programming Languages(2022)</li>
+        <li>>System Analysis amd Design(2022)</li>
+      </ul>
+    </div>
+    
+    <section>
+      <h2 id="projects">Projects</h2>
+      <ul>
+        <li>>Hotel management System at SUZA</ul>
 
-      window.location.href = 'login.html';
-    }
-  </script>
+      <div>
+      <h2 id="management">Management Experiance</h2>
+        <ul>
+          <li>>Class monitor at shamaliwa Secondary School</li>
+          <li>>Environmental Prefect at Mwenge Secondary School</li>
+        </ul>
+      </div>
+      <section>
+      <h2 id="dependents">Dependants</h2>
+        <ul>
+          <li>>Cynthia : Daughter</li>
+          <li>>Ivanna : Daughter</li>
+          <li>>Yulitha : Mother</li>
+          <li>>Paschal : Father</li>
+          <li>>Gloria : Wife</li>
+        </ul>
+      </section>
 
-  <script>
-    function initMap() {
-      var myLatLng = {lat: 0533971, lng: 9322059};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: myLatLng
-      });
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
-  </script
 
 </body>
 </html>
