@@ -1,0 +1,12 @@
+#map {
+        height: 400px;
+        width: 100%;
+        font-size: 30px;
+        font-style: oblique;
+      }
+#comments{
+	margin-top: 10px;
+}
+body{
+        background-color: papayawhip ;
+}
