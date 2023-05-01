@@ -1,0 +1,14 @@
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+body{
+  background-color: papayawhip;
+}
+
+#comments{
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}

@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Us</title>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-	<link rel="stylesheet" type="text/css" href="contactus.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>contact us</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
-  <body onload="initMap()" >
-      <h1>Contact Us</h1>
+<body>
+  <h1>Contact Us</h1>
+  <div id="map"> <u> Access Your Location on the Map Below </u></div>
+  <form>
+    <h2>contact form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required> <br><br>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" rows="0" required></textarea><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
 
-      <section id="map">map</section>
+  <script>
+    function submitForm() {
 
-      <span id="contact">
-        <h2>Contact Form</h2>
-        <form onsubmit="return storeData()">
-          <label for="name">Name:</label>
-          <input type="text" id="name" required>
-          <label for="address">Address:</label>
-          <input type="text" id="address" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" required>
-          <label for="comments">Comments:</label>
-          <textarea id="comments" rows="7" required></textarea>
-          <a href="file:///C:/cynthia/Nestbuzhune.github.io/login.html"><button type="submit">Submit</button></a>
-        </form>
-      </span>
-      <script src="contactus.js"></script>
+      var name = document.getElementById('name').value;
+      var address = document.getElementById('address').value;
+      var email = document.getElementById('email').value;
+      var comments = document.getElementById('comments').value;
 
-  </body>
+      localStorage.setItem('name', name);
+      localStorage.setItem('address', address);
+      localStorage.setItem('email', email);
+      localStorage.setItem('comments', comments);
+
+      window.location.href = 'login.html';
+    }
+  </script>
+
+  <script>
+    function initMap() {
+      var myLatLng = {lat: 0533971, lng: 9322059};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: myLatLng
+      });
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+  </script
+
+</body>
 </html>
+
