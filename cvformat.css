@@ -1,7 +1,7 @@
 body{
 	background-color: papayawhip;
 	border: solid black;
-	border-style: double;
+	border-style:revert-layer;
 	border-width: 5px;
 	max-width: 100%;
 	margin: 0 auto;
@@ -47,4 +47,17 @@ table th,table td{
 	border: solid black;
 	padding: 8px;
 	text-align: left;
+}
+
+fieldset{
+	background-color: skyblue;
+	height: 140px;
+	margin-bottom: 0%;
+	margin-top: 2%;
+}
+.fieldset{
+	height: 0%;
+	margin-bottom: 0%;
+	background-color: black;
+	margin-top: 5%;
 }
