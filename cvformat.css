@@ -1,3 +1,10 @@
+body{
+	background-color: papayawhip;
+	border: solid black;
+	border-style: double;
+	border-width: 5px;
+	max-width: 100%;
+}
 .nest{
 	display: inline-block;
 	background-color: white;
@@ -18,7 +25,23 @@ img{
 	float: right;
 	margin-bottom: 900px;
 }
-.gloria{
+p{
 	display: inline-block;
-	width: 100;
+	float: left;
+	margin-right: 10px;
+}
+.gloria{
+	width: 100%;
+	overflow: hidden;
+}
+table{
+	border-collapse:collapse;
+	width: 80%;
+	padding: 50px;
+}
+
+table th,table td{
+	border: solid black;
+	padding: 8px;
+	text-align: left;
 }
