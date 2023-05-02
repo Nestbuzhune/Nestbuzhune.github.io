@@ -36,7 +36,7 @@ p{
 	width: 100%;
 	overflow: hidden;
 }
-table{
+.table1{
 	border-collapse:collapse;
 	margin: 0 auto;
 	padding: 50px;
@@ -60,4 +60,9 @@ fieldset{
 	margin-bottom: 0%;
 	background-color: black;
 	margin-top: 5%;
+}
+.table2{
+	border-collapse:collapse;
+	padding: 10px;
+	width:90%;
 }
