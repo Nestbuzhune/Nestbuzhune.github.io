@@ -1,8 +1,3 @@
-#map {
-  height: 400px;
-  width: 100%;
-}
-
 body{
   background-color: papayawhip;
 }
@@ -11,4 +6,10 @@ body{
   margin-bottom: 0px;
   margin-top: 0px;
 
+}
+input{
+  background-color:blue;
+}
+button{
+  z
 }
