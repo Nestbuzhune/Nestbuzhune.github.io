@@ -1,5 +1,7 @@
 body{
   background-color: papayawhip;
+  margin: 0 auto;
+  width: 70%;
 }
 
 #comments{
@@ -8,8 +10,17 @@ body{
 
 }
 input{
-  background-color:blue;
+  background-color: lightblue;
 }
-button{
-  z
+button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  border: none;
 }
+
+button:hover {
+  background-color:gray;
+}
+
